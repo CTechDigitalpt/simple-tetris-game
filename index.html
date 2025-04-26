@@ -1,0 +1,83 @@
+<!--
+    This file is part of the Tetris Game project.
+
+    License: This code is free to use and modify, but you must provide recognition to the original developer.
+    Author: CTechDigital.com 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="assets/images/icon/favicon.webp" type="image/png">
+</head>
+
+<body>
+    <button id="toggle-sidebar-btn">Hide Sidebar</button>
+    <div id="sidebar">
+        <img src="assets/images/logo/ctechdigital.png" alt="CTechDigital.com" class="sidebar-logo">
+        <p class="sidebar-created-by">Created by</p>
+        <a href="https://www.ctechdigital.com" target="_blank" class="sidebar-url">CTech Digital.com</a>
+        <div class="social-icons">
+            <a href="https://github.com/CTechDigitalpt" target="_blank" class="social-link">
+                <img src="assets/images/social/light/github.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://x.com/CTechDigital" target="_blank" class="social-link">
+                <img src="assets/images/social/light/twitter-x.svg" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/ctechdigitalcom/" target="_blank" class="social-link">
+                <img src="assets/images/social/light/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com/@ctechdigital.com" target="_blank" class="social-link">
+                <img src="assets/images/social/light/tiktok.svg" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/company/ctech-digital/" target="_blank" class="social-link">
+                <img src="assets/images/social/light/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@CTech_Digital" target="_blank" class="social-link">
+                <img src="assets/images/social/light/youtube.svg" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+        <p class="sidebar-description">A Simple Fun Tetris Game</p>
+        <p class="sidebar-help-notice">Best Played in Full Screen (F11)</p>
+        <div class="donate-buttons">
+            <button id="donate-btn-patreon" onclick="window.open('https://www.patreon.com/ctechdigital', '_blank')">Donate at Patreon</button>
+            <button id="donate-btn-paypal" onclick="window.open('https://www.paypal.com/donate/?hosted_button_id=8NZMBAKJTVHPY', '_blank')">Donate at PayPal</button>
+            <button id="donate-btn-kofi" onclick="window.open('https://ko-fi.com/ctechdigitalcom', '_blank')">Donate at Ko-FI</button>
+        </div>
+    </div>
+    <div id="game-container">
+        <div id="canvas-size-controls">
+            <div class="size-input-group">
+                <label for="canvas-width">Width:</label>
+                <input type="number" id="canvas-width" min="100" max="800" step="20" value="300">
+            </div>
+            <div class="size-input-group">
+                <label for="canvas-height">Height:</label>
+                <input type="number" id="canvas-height" min="200" max="1200" step="20" value="500">
+            </div>
+            <button id="apply-size-btn">Apply Size</button>
+        </div>
+        <canvas id="tetris-board" width="420" height="420"></canvas>
+        <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="game-controls">
+            <button id="start-game-btn">Start Game</button>
+            <button id="restart-game-btn" disabled>Restart Game</button>
+        </div>
+    </div>
+    <div id="scores-container">
+        <h2>Top 10 Scores</h2>
+        <ol id="top-scores-list">
+        </ol>
+    </div>
+    <script src="static/js/board.js"></script>
+    <script src="static/js/shape.js"></script>
+    <script src="static/js/tetris.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
