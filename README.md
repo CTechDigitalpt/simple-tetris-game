@@ -16,8 +16,10 @@ A simple Tetris game built with HTML, CSS, and JavaScript.
 - CSS3 for styling
 - JavaScript for game logic
 
+![Sneaky Snake Game Screenshot](assets/images/simple-tetris-game-by-ctechdigitalcom.png "Simple Tetris Game")
+
 ## How to Play
-1. Open `tetris.html` in your browser.
+1. Open `index.html` in your browser.
 2. Use the following controls:
    - Left arrow key: Move piece left
    - Right arrow key: Move piece right
