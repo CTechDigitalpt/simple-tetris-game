@@ -42,11 +42,11 @@ The game automatically tracks and displays the top 10 high scores achieved. Thes
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CTechDigitalpt/sneaky-snake-game.git
+   git clone https://github.com/CTechDigitalpt/simple-tetris-game.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd sneaky-snake-game
+   cd simple-tetris-game
    ```
 3. Open `index.html` in your browser to start playing.
 
